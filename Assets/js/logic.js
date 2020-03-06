@@ -44,7 +44,6 @@ $(document).ready(function() {
             if (timerCount === 0 || timerCount < 0) {
                 clearInterval(timeInterval);
                 alert("Time's Up!");
-
             }
         }, 1000); 
     }
@@ -60,10 +59,6 @@ $(document).ready(function() {
     }
 
     function generateQuestions() {
-
-        if (questionNumber === 5) {
-            alert("End of Quiz");
-        }
 
         startButton.hide();
         mainTextContainer.empty();
