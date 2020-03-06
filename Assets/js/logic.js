@@ -34,7 +34,7 @@ var pauseCount = 1;
 $(document).ready(function() {
 
     function countDown() {
-        alert("You have 3 minutes to finish the quiz.  Good Luck!");
+        alert("Good Luck!");
         $("#displayTimer").text("Time Left: " + timerCount);
 
         var timeInterval = setInterval(function() {
@@ -42,10 +42,7 @@ $(document).ready(function() {
             $("#displayTimer").text("Time Left: " + timerCount);
 
             if (timerCount === 0 || timerCount < 0) {
-
                 clearInterval(timeInterval);
-
-                localStorage.setItem("score", userScore);
                 alert("Time's Up!");
 
             }
@@ -57,9 +54,7 @@ $(document).ready(function() {
         var timeInterval = setInterval(function() {
             pauseCount--;
             if (pauseCount === 0) {
-                clearInterval(timeInterval);
-
-
+                clearInterval(timeInterval); 
             }
         }, 1000);
     }
@@ -68,7 +63,6 @@ $(document).ready(function() {
 
         if (questionNumber === 5) {
             alert("End of Quiz");
-            localStorage.setItem("score", userScore);
         }
 
         startButton.hide();
@@ -128,18 +122,6 @@ $(document).ready(function() {
         })
 
     }
-
-
-    function nextQuestion() {
-        console.log(questionNumber);
-        if (questionNumber > 5) {
-            alert("End of Quiz");
-        }
-        else {
-            generateQuestions();
-        }
-    }
-
 
     startButton.on("click", countDown);
     startButton.on("click", generateQuestions);

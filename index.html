@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Your Knowledge</title>
+    <title>GOT Quiz</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -14,8 +14,8 @@
 
 </head>
 
-<body>
-    <div class="spacer-row"></div>
+<body style="background-image: url(http://getwallpapers.com/wallpaper/full/9/9/6/655721.jpg); background-size: 125% 140%;">
+    <div class="row"></div>
     <h3>Game of Thrones Quiz</h3>
 
     <div class="container introText">
@@ -24,15 +24,21 @@
 
     <div class="container" id="quizQuestions"></div>
 
+    <!-- Audio Player -->
+    <div class="gotPlayer align-center">
+        <audio autoplay="autoplay" controls="crossorigin"> 
+            <source src="https://ia800908.us.archive.org/12/items/tvtunes_20712/Game%20of%20Thrones.mp3"/>     
+        </audio>
+    </div>
         
-    <div class="spacer-row"></div>
+    <div class="row"></div>
 
     <div class="container align-center">
-        <button type="button" class="btn btn-primary" id="start-button">Begin!</div>
+        <button type="button" class="btn btn-primary" id="start-button">START</div>
     </div>
 
         
-    <div class="spacer-row"></div>
+    <div class="row"></div>
 <!-- Score -->
     <div class="container">
         <p id="score">Score:</p>

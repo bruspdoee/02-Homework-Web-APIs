@@ -7,11 +7,19 @@ h3 {
     width: 50%;
     height: 4rem;
     padding-top: 14px;
+    background-color: white;
 }
 
-
-.spacer-row {
+.row {
     min-height: 3rem;
+}
+
+.gotPlayer {
+    padding-top: 15px;
+}
+
+.questionContainer{
+    color: white;
 }
 
 .align-center {
@@ -30,6 +38,7 @@ h3 {
     font-weight: bold;
     height: 3rem;
     margin: auto;
+    background-color: white;
 }
 
 #score {
@@ -42,6 +51,7 @@ h3 {
     width: 20%;
     text-align: center;
     margin: auto;
+    background-color: white;
 }
 
 .answerContainer {
@@ -50,6 +60,7 @@ h3 {
     text-align: left;
     margin-top: 1rem;
     height: 3rem;
+    background-color: white;
 }
 
 .optionContainer {
@@ -58,6 +69,7 @@ h3 {
     text-align: left;
     margin-top: 1rem;
     height: 3rem;
+    background-color: white; 
 }
 
 .scoreHeading {
@@ -66,8 +78,10 @@ h3 {
     text-decoration: underline;
     text-align: center;
     margin: auto;
+    background-color: white;
 }
 
 .introText {
     width: 50%;
+    background-color: white;
 }
