@@ -4,7 +4,6 @@ var mainTextContainer = $(".introText");
 var quizContainer = $("#quizQuestions");
 var questionNumber = 0;
 
-
 var questionsAndAnswers = [{
     Question: "Who was responsible for the creation of the Night King?",
     Answers: ["Brus Palaj", "The Children of the Forest", "Donald Trump", "Bran the Builder"],
@@ -34,7 +33,6 @@ var pauseCount = 1;
 $(document).ready(function() {
 
     function countDown() {
-        alert("Good Luck!");
         $("#displayTimer").text("Time Left: " + timerCount);
 
         var timeInterval = setInterval(function() {
@@ -75,7 +73,6 @@ $(document).ready(function() {
  
         $("#score").text("Score: " + userScore);
 
-
         var i;
         for (i = 0; i < questionsAndAnswers[questionNumber].Answers.length; i++) {
             var answerText = $("<button>"); 
@@ -86,19 +83,15 @@ $(document).ready(function() {
 
         $(".answerContainer").on("click", function(e) {
 
-          
             $(this).addClass("selectContainer");
 
-           
             var selectedAnswer = e.target.innerHTML;
 
-          
             if (selectedAnswer === questionsAndAnswers[questionNumber].Correct) {
                 alert("Correct!");
 
                 userScore += 20; 
                 $("#score").text("Score: " + userScore); 
-
 
                 questionNumber++; 
                 questionPause(); 
