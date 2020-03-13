@@ -37,8 +37,18 @@ h3 {
     text-align: center;
 }
 
+.align-center2 {
+    text-align: center;
+}
+
 .container {
     width: 80%;
+}
+
+.container1 {
+    width: 65%;
+    text-align: center;
+    margin: auto;
 }
 
 #displayTimer {
@@ -71,10 +81,14 @@ button.answerContainer {
 
 }
 
-button.answerContainer:hover{
+/* button.answerContainer:hover{
     color: white;
-    background-color: transparent;
     border: solid white 1px;
+} */
+
+#start-button { 
+    background-color: transparent;
+    border: solid white;
 }
 
 .answerContainer {

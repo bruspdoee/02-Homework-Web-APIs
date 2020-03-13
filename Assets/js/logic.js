@@ -43,6 +43,12 @@ $(document).ready(function() {
                 clearInterval(timeInterval);
                 alert("Time's Up!");
             }
+
+            if (questionNumber === 5) {
+                $("#displayTimer").empty();
+                var timerContainer = $(".container1")
+                timerContainer.empty();
+            }
         }, 1000); 
     }
 
