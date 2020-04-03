@@ -1,14 +1,20 @@
+*{
+   box-sizing: border-box;
+   margin: 0 auto;
+   padding: 0;
+}
+
 html, body {
-    width: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background: url("https://cutewallpaper.org/21/game-of-thrones-phone-background/1920x1080-Game-Of-Thrones-Background-Spiritedmusepress.com.jpg") no-repeat center center fixed; 
+    background-size: cover;
     height: 100%;
     overflow: hidden;
     position: relative;
-    background: url("https://cutewallpaper.org/21/game-of-thrones-phone-background/1920x1080-Game-Of-Thrones-Background-Spiritedmusepress.com.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+    width: 100%;
+}
 
 h3 {
     text-align: center;
@@ -41,38 +47,61 @@ h3 {
     text-align: center;
 }
 
-.container {
-    width: 80%;
+.containerScore{
+    margin: 0 auto;
+    width: 300px;
 }
 
 .container1 {
-    width: 65%;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
+    width: 300px;
+    padding: 0;
+}
+
+.rowGOT, #gotR{
+    display: block;
+}
+
+.rowGOT{
+    width: 100%;
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+}
+
+#gotR{
+    padding: 5px;
 }
 
 #displayTimer {
-    width: 100%;
     text-align: center;
     font-size: 12px;
     border: solid black 1px;
     font-weight: bold;
     height: 3rem;
-    margin: auto;
+    margin: 0 auto;
+    padding: 5px;
     background-color: white;
+}
+
+.container1, #displayTimer{
+    display: block;
+}
+
+.containerScore, #score{
+    display: block;
 }
 
 #score {
     border: solid black 1px;
     font-weight: bold;
-    padding-left: 1rem;
     font-size: 18px;
     height: 3rem;
-    padding-top: 0.5rem;
-    width: 100%;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     background-color: white;
+
 }
 
 button.answerContainer {
@@ -80,11 +109,6 @@ button.answerContainer {
     text-align: center;
 
 }
-
-/* button.answerContainer:hover{
-    color: white;
-    border: solid white 1px;
-} */
 
 #start-button { 
     background-color: transparent;
@@ -110,8 +134,8 @@ button.answerContainer {
 }
 
 .introText {
-    width: 50%;
     background-color:transparent;
     color: white;
     font-size: 1rem;
+    text-align: center;
 }
