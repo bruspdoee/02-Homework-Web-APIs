@@ -1,6 +1,6 @@
 # Game of Thrones Quiz
 
-#Test your GOT Knowledge HERE: https://bruspdoee.github.io/Game-of-Thrones-Quiz/
+<strong>Test your GOT Knowledge HERE:</strong> https://bruspdoee.github.io/Game-of-Thrones-Quiz/
 
 <strong>Desktop</strong>
 <br>
